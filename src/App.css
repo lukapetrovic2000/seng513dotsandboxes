@@ -1,38 +1,103 @@
-.App {
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(160, 160, 212);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 0px;
+  border: 2px dotted rgb(72, 71, 71)
+}
+
+#title{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#home {
+  margin-right: 50px;
+  color: black;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#play {
+  margin-left: 50px;
+  color: black;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#postgame {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px;
+  border: 3px dotted rgb(72, 71, 71);
 }
 
-.App-link {
-  color: #61dafb;
+.results {
+  display: flex;
+  flex-direction: columns;
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#board {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#gameInfo {
+  margin: 25px;
+}
+
+#button {
+  height: 40px;
+  width: 100px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#Landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.horizLine {
+  height: 10px;
+  width: 50px;
+  background-color: white;
+}
+
+.vertLine {
+  height: 50px;
+  width: 10px;
+  background-color: white;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: white;
 }

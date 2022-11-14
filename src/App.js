@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
+import { HashRouter, Routes, Route,} from 'react-router-dom'
+import Landing from './pages/Landing';
+import Game from './pages/Game'
+import PostGame from './pages/PostGame'
+import Layout from './pages/Layout';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+    render() {
+      return (
+        <HashRouter> 
+          <Routes>
+            <Route path='/' element={<Layout />}> 
+              <Route index element={<Landing />} />
+              <Route path='play' element={<Game />} />
+              <Route path='postgame' element={<PostGame/>} />
+            </Route>
+          </Routes>
+        </HashRouter>
+      )
+    }
 }
+
 
 export default App;
