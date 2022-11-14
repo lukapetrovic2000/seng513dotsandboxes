@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/seng513dotsandboxes/static/css/main.f8cd3f0c.css",
+    "main.js": "/seng513dotsandboxes/static/js/main.8d570a16.js",
+    "static/js/787.7f831edb.chunk.js": "/seng513dotsandboxes/static/js/787.7f831edb.chunk.js",
+    "index.html": "/seng513dotsandboxes/index.html",
+    "main.f8cd3f0c.css.map": "/seng513dotsandboxes/static/css/main.f8cd3f0c.css.map",
+    "main.8d570a16.js.map": "/seng513dotsandboxes/static/js/main.8d570a16.js.map",
+    "787.7f831edb.chunk.js.map": "/seng513dotsandboxes/static/js/787.7f831edb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8cd3f0c.css",
+    "static/js/main.8d570a16.js"
+  ]
+}
